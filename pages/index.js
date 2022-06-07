@@ -1,6 +1,6 @@
 
 import styles from '../styles/Home.module.css'
-import SubmissionForm from '../components/SubmissionForm'
+import Main from '../components/Main'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -16,13 +16,3 @@ export default function Home() {
   )
 }
 
-const Main = (props) => {
-  return (
-    <>
-      <main className='bg-green-300 w-1/2 flex flex-col items-center mx-auto rounded mt-6'>
-        <SubmissionForm/>
-      </main>
-      <p>Report Table Coming Soon</p>
-    </>
-  )
-}
