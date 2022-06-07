@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Python 401d18
+## Lab 37: Welcome to React, Next.js & TailwindCSS
+### Author: Tyler Egashira
 
-## Getting Started
+## Lab: 37
 
-First, run the development server:
+### Resources
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[Next JS and Tailwind docs](https://tailwindcss.com/docs/guides/nextjs)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Setup
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+* Work in teams to build a command line version of the dice game Ten Thousand by expanding your understanding of Python standard library.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Feature Tasks and Requirements
 
-## Learn More
+create a Cookie Stand Admin app using Next.js and style using Tailwind CSS.
 
-To learn more about Next.js, take a look at the following resources:
+- The spec for lab is screen shot of Cookie Stand Admin Version 1
+- pages/Index.js should…
+- Have <Head> component with page title set to Cookie Stand Admin
+- Have a header component that matches spec.
+- Have a <main> component containing <form> and a placeholder component showing JSON string of last created Cookie Stand.
+- Have a <footer> component that matches spec.
+- Style app using TailwindCSS utility classes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Implementation Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Follow Install Tailwind CSS with Next.js steps.
+- NOTE: name your app cookie-stand-admin instead of my-project
+- Strip out unused files: Won’t break if they get left in, but a good practice to remove stuff you’re not using.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
