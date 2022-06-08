@@ -14,6 +14,7 @@ const SubmissionForm = (props) => {
     function submitHandler(e) {
         e.preventDefault();
         props.createData(values);
+        props.setNumLoc()
         setValues(initValues)
     }
     
@@ -23,7 +24,7 @@ const SubmissionForm = (props) => {
             value = parseFloat(value);
         }
         setValues({ ...values, [name]: value });
-        console.log(initValues)
+        console.log(values)
     }
     
     return (
@@ -39,19 +40,19 @@ const SubmissionForm = (props) => {
                     </div>
 
                     <div className="flex gap-x-4 px-2">
-                        <div>
-                            <label>Minimum Customers per Hour</label>
-                            <input className="w-full p-3 mt-3 h-6" type="number" name="minCustomers" id="minCustomers" value={values.minCustomers} onChange={changeHandler} placeholder="1"/>
+                        <div className='bg-emerald-200 rounded'>
+                            <label className='text-sm'>Minimum Customers per Hour</label>
+                            <input className="w-5/6 p-3 my-2 h-6" type="number" name="minCustomers" id="minCustomers" value={values.minCustomers} onChange={changeHandler} placeholder="1"/>
                         </div>
-                        <div>
-                            <label>Maximum Customers per Hour</label>
-                            <input className="w-full p-3 mt-3 h-6" type="number" name="maxCustomers" id="maxCustomers" value={values.maxCustomers} onChange={changeHandler} />
+                        <div className='bg-emerald-200 rounded'>
+                            <label className='text-sm'>Maximum Customers per Hour</label>
+                            <input className="w-5/6 p-3 my-2 h-6" type="number" name="maxCustomers" id="maxCustomers" value={values.maxCustomers} onChange={changeHandler} />
                         </div>
-                        <div>
-                            <label>Average Cookies per Sale</label>
-                            <input className="w-full p-3 mt-3 h-6" type="number" step='0.01' name="avgCookies" id="avgCookies" value={values.avgCookies} onChange={changeHandler} />
+                        <div className='bg-emerald-200 rounded'>
+                            <label className='text-sm'>Average Cookies per Sale</label>
+                            <input className="w-5/6 p-3 my-2 h-6" type="number" step='0.01' name="avgCookies" id="avgCookies" value={values.avgCookies} onChange={changeHandler} />
                         </div>
-                    <button type="submit" className="w-2/5 bg-green-400">Create</button>
+                    <button type="submit" className="w-2/5 bg-emerald-500 rounded">Create</button>
                     </div>
                 </form>
             </div>
