@@ -7,7 +7,7 @@
 ### Resources
 
 [Next JS and Tailwind docs](https://tailwindcss.com/docs/guides/nextjs)
-
+[Color every other row](https://stackoverflow.com/questions/64460494/what-is-the-correct-way-to-apply-classes-dynamically-to-odd-even-rows-of-table)
 
 ### Setup
 
