@@ -13,3 +13,11 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+tbody tr:nth-child(even){
+  background-color: #35D399;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #6FE6B7;
+}
