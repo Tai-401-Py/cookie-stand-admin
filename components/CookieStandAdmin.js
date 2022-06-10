@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 
 const CookieStandAdmin = (props) => {
     
+    
     const [numLoc, setNumLoc] = useState(0)
 
     const passLocNum = () =>{
