@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useAuth } from '../contexts/auth';
 import useResource from '../hooks/useResource';
 import CookieStandAdmin from '../components/CookieStandAdmin'
+import LoginForm from '../components/LoginForm'
 
 export default function Home() {
 
