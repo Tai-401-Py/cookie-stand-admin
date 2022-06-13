@@ -16,7 +16,6 @@ const SubmissionForm = (props) => {
             owner: user.id,
         };
         createResource(stand_data);
-        props.setNumLoc()
     }
 
     
