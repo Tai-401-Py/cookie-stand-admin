@@ -1,28 +1,20 @@
-import { useState } from 'react'
 import Main from '../components/Main'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-
+import useResource from '../hooks/useResource'
 
 
 const CookieStandAdmin = (props) => {
     
-    
-    const [numLoc, setNumLoc] = useState(0)
-
-    const passLocNum = () =>{
-        let num = numLoc + 1
-        setNumLoc(num) 
-    }
+  const { resources } = useResource();
 
     return (
       <>
         <Header />
         <Main 
-        setNumLoc = {passLocNum}
         />
         <Footer
-        numLoc = {numLoc}
+        stands = {resources || []}
         />
       </>
     )
