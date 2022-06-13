@@ -39,7 +39,7 @@ const TableHeader = () => {
                 <th>
                     Location
                 </th>
-                {hours.map(hour => (<th>{hour}</th>))}
+                {hours.map(hour => (<th key={hour}>{hour}</th>))}
                 <th>
                     Totals
                 </th>
