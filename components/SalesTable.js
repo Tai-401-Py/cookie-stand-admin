@@ -62,7 +62,11 @@ const TableBody = (props) => {
     return (
         <tr>
             <td>
-                {props.stand.location}
+                {/* <Link href={}>
+                <a> */}
+                    {props.stand.location}
+                    {/* </a>
+                </Link> */}
                 <button onClick={clickHandler}><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
   <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
 </svg></button>
@@ -100,7 +104,7 @@ const TableFooter = (props) => {
         <tfoot className="border-collapse border border-gray-900 bg-emerald-500">
             <tr className="border-collapse border border-gray-900">
                 <th className="border-collapse border border-gray-900">Totals</th>
-                {totalSumArray.map(sum => (<th className="border-collapse border border-gray-900">{sum}</th>))}
+                {totalSumArray.map((sum, index) => (<th key={index} className="border-collapse border border-gray-900">{sum}</th>))}
                 <th className="border-collapse border border-gray-900">{totalSumArray.reduce((acc, curr) => { acc = acc + curr; return acc }, 0)}</th>
             </tr>
         </tfoot>
