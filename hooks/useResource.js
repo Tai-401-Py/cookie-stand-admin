@@ -1,7 +1,7 @@
 import axios from 'axios';
 import useSWR from 'swr';
 
-export const apiUrl = process.env.NEXT_PUBLIC_RESOURCE_URL;
+export const apiUrl = 'https://wild-cookie-api.herokuapp.com/api/v1/cookie_stand/';
 import { useAuth } from '../contexts/auth';
 
 export default function useResource() {
