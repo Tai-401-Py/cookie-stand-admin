@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from 'react';
 import jwt from 'jsonwebtoken';
 import axios from 'axios';
-const baseUrl = 'https://wild-cookie-api.herokuapp.com'
+const baseUrl = 'https://wild-cookie-api.herokuapp.com';
 const tokenUrl = baseUrl + '/api/token/';
 
 const AuthContext = createContext();
