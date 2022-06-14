@@ -1,5 +1,5 @@
 import { hours } from '../data/Hours'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 
 const SalesTable = (props) => {
 
