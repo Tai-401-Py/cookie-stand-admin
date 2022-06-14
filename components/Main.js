@@ -3,7 +3,7 @@ import SalesTable from '../components/SalesTable';
 
 import useResource from '../hooks/useResource'
 
-const Main = (props) => {
+const Main = () => {
   
   const { resources, deleteResource } = useResource();
 
@@ -12,7 +12,6 @@ const Main = (props) => {
     <>
       <main className='bg-emerald-300 w-1/2 flex flex-col items-center mx-auto rounded my-6'>
         <SubmissionForm
-          setNumLoc={props.setNumLoc}
         />
       </main>
       <SalesTable
